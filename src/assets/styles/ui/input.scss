@@ -1,0 +1,50 @@
+.input {
+  display: flex;
+  padding: 16px 22px;
+  align-items: center;
+  gap: 10px;
+  font: var(--txt-cap-3);
+  color: var(--Primary, #001a55);
+  border: none;
+  border-radius: 12px;
+  background: var(--Back, #e7ebee);
+
+  &::placeholder {
+    color: var(--Border, #a7a7a7);
+  }
+
+  &.valid {
+    border-color: green;
+  }
+
+  &.valid + .contacts__form_error {
+    display: none;
+  }
+
+  &.invalid {
+    border-color: red;
+  }
+  &.invalid + .contacts__form_error {
+    display: block;
+  }
+}
+
+.textarea {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 14px;
+  font: var(--text-p-4);
+  color: var(--clr-back, #fff);
+  border: none;
+  border-radius: 36px;
+  background: var(--clr-secondary, #273c7b);
+
+  @include breakpoint($sm-bp) {
+    padding: 1.8rem 3rem;
+  }
+
+  &::placeholder {
+    color: hsl(var(--clr-white-dark));
+  }
+}

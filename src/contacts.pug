@@ -1,0 +1,20 @@
+extends ./modules/layouts/base
+
+block meta
+  script(defer, src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript")
+  script(defer, src='assets/js/map.js' type="text/javascript")
+  - var seotitle = 'Контакты';
+  - var seodescription = '';
+  - var seokeywords = '';
+  meta(http-equiv="Content-Security-Policy"
+    content="default-src 'unsafe-inline' https://api-maps.yandex.ru https://yastatic.net; script-src 'self' 'unsafe-inline' https://api-maps.yandex.ru https://yastatic.net; script-src-elem 'self' 'unsafe-inline' https://api-maps.yandex.ru https://yastatic.net https://core-renderer-tiles.maps.yandex.net; connect-src 'self' 'unsafe-inline' https://api-maps.yandex.ru https://yastatic.net;img-src 'self'  https://core-renderer-tiles.maps.yandex.net https://api-maps.yandex.ru https://yandex.ru data:; style-src-elem 'self' 'unsafe-inline'; font-src 'self' data: blob: 'unsafe-inline';")
+
+block header
+  include ./modules/widgets/header/header
+  include ./modules/widgets/header-mobile/header-mobile
+
+block main
+  include ./modules/widgets/contacts/contacts
+
+block footer
+  include ./modules/widgets/footer/footer

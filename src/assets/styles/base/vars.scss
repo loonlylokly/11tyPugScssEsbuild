@@ -1,0 +1,213 @@
+$xl-bp: 1920px;
+$lp-bp: 1440px;
+$tb-bp: 1280px;
+$md-bp: 1024px;
+$sm-bp: 768px;
+
+:root {
+  // Gradients
+  --Back: #e7ebee;
+  --onBack: #000215;
+  --Border: #a7a7a7;
+  --Surface: #fff;
+
+  --Primary: #001a55;
+  --Primary-dark: #000c33;
+  --Secondary: #007abb;
+  --Secondary-dark: #025888;
+  --Tertiary: #01a7cb;
+  --Tertiary-light: #04add1;
+  --Quaternary: #020832;
+  --Quaternary-light: #022352;
+
+  --Error-red: #f00;
+
+  --Icon-Green: #25d366;
+  --Icon-Blue: #665ca7;
+  --Icon-yellow: #f8ce00;
+
+  --Icon-gradient: linear-gradient(203deg, #37aee2 21.67%, #1e96c8 70%);
+  --gradient-1: linear-gradient(329deg, #025888 0.21%, #020832 42.52%);
+  --gradient-2: linear-gradient(33deg, #007abb 1.44%, #020832 42.81%);
+  --gradient-3: linear-gradient(180deg, #fff 0%, rgba(167, 167, 167, 0) 100%);
+  --gradient-4: linear-gradient(68deg, #001a55 17.72%, #020832 37.08%);
+  --gradient-5: linear-gradient(305deg, #007abb 3.11%, #022352 30.21%, #020832 38.53%);
+  --gradient-6: radial-gradient(63.47% 63.28% at 51.35% 60.79%, #007abb 0%, #020832 75.29%);
+  --gradient-7: linear-gradient(90deg, #007abb 0.06%, #a7a7a7 68.98%);
+  --gradient-8: linear-gradient(33deg, #007abb 2.9%, #020832 83.02%);
+  --gradient-9: linear-gradient(90deg, #011a55 26.23%, #020832 70.59%);
+  --gradient-10: radial-gradient(53% 46% at 48% 36%, #007abb 19%, #007abb 30%, #020832 85%);
+  --gradient-10-new: radial-gradient(53% 46% at 48% 36%, #007abb 19%, #007abb 30%, #020832 85%);
+  --gradient-11: linear-gradient(223deg, #c2daf9 19.16%, rgba(255, 255, 255, 0) 32.88%);
+  --gradient-12: radial-gradient(
+    85.61% 78.61% at 50% 21.39%,
+    #006395 2%,
+    #022352 29%,
+    #000731 56.5%
+  );
+
+  // Margins
+
+  /* 167px
+  162px
+  160px
+  152px
+  124px
+  105px
+  92px
+  98px
+  95px */
+
+  // Paddings
+  --main-pd-top: 120px;
+  --wrapper-pd-inl: 240px;
+  --section-pd: 160px;
+  --section-pd-sm: 98px;
+
+  // Gaps
+  --gap: 32px;
+  --gap-lg: 64px;
+  --gap-sm: 16px;
+
+  // Font
+  --txt-h1: normal 600 3rem/125% 'Gothic A1';
+  --txt-h2: normal 500 2.125rem/124% 'Gothic A1';
+  --txt-h3: normal 500 2rem/112.5% 'IBM Plex Sans';
+  --txt-h4: normal 500 1.875rem/120% 'IBM Plex Sans';
+  --txt-h5: normal 500 1.75rem/121.5% 'IBM Plex Sans';
+  --txt-h6: normal 500 1.625rem/115.5% 'IBM Plex Sans';
+
+  --txt-xl: normal 400 1.25rem/130% 'IBM Plex Sans';
+  --txt-l: normal 400 1rem/150% 'IBM Plex Sans';
+  --txt-m: normal 400 0.875rem/107% 'IBM Plex Sans';
+  --txt-s: normal 400 0.875rem/107% 'IBM Plex Sans';
+
+  --txt-cap-1: normal 500 1.5rem/150% 'IBM Plex Sans';
+  --txt-cap-2: normal 500 1.375rem/136.4% 'IBM Plex Sans';
+  --txt-cap-3: normal 400 1rem/162.5% 'IBM Plex Sans';
+  --txt-cap-4: normal 400 0.875rem/142.9% 'IBM Plex Sans';
+  --txt-cap-5: normal 400 0.75rem/166.7% 'IBM Plex Sans';
+
+  --txt-label-1: normal 500 1.25rem/140% 'Gothic A1';
+  --txt-label-2: normal 400 1rem/150% 'IBM Plex Sans';
+
+  --txt-h1-d: normal 600 3rem/125% 'Gothic A1';
+  --txt-h2-d: normal 500 2.125rem/124% 'Gothic A1';
+  --txt-h3-d: normal 500 2rem/112.5% 'IBM Plex Sans';
+  --txt-h4-d: normal 500 1.875rem/120% 'IBM Plex Sans';
+  --txt-h5-d: normal 500 1.75rem/121.5% 'IBM Plex Sans';
+  --txt-h6-d: normal 500 1.625rem/115.5% 'IBM Plex Sans';
+
+  --txt-xl-d: normal 400 1.25rem/130% 'IBM Plex Sans';
+  --txt-l-d: normal 400 1.125rem/144.4% 'IBM Plex Sans';
+  --txt-m-d: normal 400 0.875rem/107% 'IBM Plex Sans';
+  --txt-s-d: normal 400 0.875rem/107% 'IBM Plex Sans';
+
+  --txt-cap-1-d: normal 500 1.5rem/150% 'IBM Plex Sans';
+  --txt-cap-2-d: normal 500 1.375rem/136.4% 'IBM Plex Sans';
+  --txt-cap-3-d: normal 400 1rem/162.5% 'IBM Plex Sans';
+  --txt-cap-4-d: normal 400 0.875rem/142.9% 'IBM Plex Sans';
+  --txt-cap-5-d: normal 400 0.75rem/166.7% 'IBM Plex Sans';
+
+  --txt-label-1-d: normal 500 1.25rem/140% 'Gothic A1';
+  --txt-label-2-d: normal 400 1rem/150% 'IBM Plex Sans';
+
+  // Font mobile
+  --txt-h1-m: normal 500 2.25rem/127.8% 'Gothic A1';
+  --txt-h2-m: normal 500 1.75rem/135% 'Gothic A1';
+  --txt-h3-m: normal 500 1.625rem/123% 'IBM Plex Sans';
+  --txt-h4-m: normal 500 1.25rem/130% 'IBM Plex Sans';
+  --txt-h5-m: normal 500 1.25rem/120% 'IBM Plex Sans';
+  --txt-h6-m: normal 500 1.375rem/145.5% 'IBM Plex Sans';
+
+  --txt-xl-m: normal 400 1rem/125% 'IBM Plex Sans';
+  --txt-l-m: normal 400 1rem/125% 'IBM Plex Sans';
+  --txt-m-m: normal 400 0.75rem/125% 'IBM Plex Sans';
+  --txt-s-m: normal 400 0.75rem/125% 'IBM Plex Sans';
+
+  --txt-cap-1-m: normal 500 1.25rem/130% 'IBM Plex Sans';
+  --txt-cap-2-m: normal 500 1.125rem/133.3% 'IBM Plex Sans';
+  --txt-cap-3-m: normal 500 1rem/125% 'IBM Plex Sans';
+  --txt-cap-4-m: normal 400 0.875rem/142.8% 'IBM Plex Sans';
+  --txt-cap-5-m: normal 400 0.75rem/166.7% 'IBM Plex Sans';
+
+  --txt-label-1-m: normal 500 1.125rem/155.5% 'Gothic A1';
+  --txt-label-2-m: normal 400 1rem/125% 'IBM Plex Sans';
+
+  // Borders
+  --brd-r-btn: 102px;
+
+  --brd-r-88: 88px;
+  --brd-r-62: 62px;
+  --brd-r-47: 47px;
+  --brd-r-38: 38px;
+  --brd-r-26: 26px;
+  --brd-r-24: 24px;
+  --brd-r-22: 22px;
+  --brd-r-18: 18px;
+  --brd-r-16: 16px;
+  --brd-r-12: 12px;
+
+  --brd-btn: 1px solid transparent;
+
+  @include breakpoint(1919px) {
+    --wrapper-pd-inl: 12.5vw; // 240px
+  }
+
+  /* @include breakpoint(1440px) {
+    --wrapper-pd-inl: 4.167vw; // 80px
+  } */
+
+  @include breakpoint($lp-bp) {
+    // Margins
+
+    // Paddings
+    /* --wrapper-pd-inl: 4.167vw; */
+
+    // Gaps
+
+    // Font
+
+    // Font Size
+  }
+
+  @include breakpoint($tb-bp) {
+    --wrapper-pd-inl: 4.167vw; // 80px
+
+    --txt-h1: var(--txt-h1-m);
+    --txt-h2: var(--txt-h2-m);
+    --txt-h3: var(--txt-h3-m);
+    --txt-h4: var(--txt-h4-m);
+    --txt-h5: var(--txt-h5-m);
+    --txt-h6: var(--txt-h6-m);
+
+    --txt-xl: var(--txt-xl-m);
+    --txt-l: var(--txt-l-m);
+    --txt-m: var(--txt-m-m);
+    --txt-s: var(--txt-s-m);
+
+    --txt-cap-1: var(--txt-cap-1-m);
+    --txt-cap-2: var(--txt-cap-2-m);
+    --txt-cap-3: var(--txt-cap-3-m);
+    --txt-cap-4: var(--txt-cap-4-m);
+
+    --txt-label-1: var(--txt-label-1-m);
+    --txt-label-2: var(--txt-label-2-m);
+  }
+
+  @include breakpoint($sm-bp) {
+    // Margins
+
+    // Paddings
+    --main-pd-top: 96px;
+    --wrapper-pd-inl: 4.267vw;
+    --section-pd: 49px;
+    --section-pd-sm: 49px;
+
+    // Gaps
+
+    // Font Size
+
+    // Borders
+  }
+}

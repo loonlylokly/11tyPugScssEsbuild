@@ -1,0 +1,9 @@
+mixin dialog(idDialog, classname, title, text)
+  dialog.dialog(id=idDialog class=classname, aria-labelledby="dialog-title")
+    .dialog__wrap
+      .dialog__title
+        h2.dialog__title_text(id="dialog-title")= title
+        button.dialog__close.btn.text(data-dialog-close=idDialog)
+          +sprite('dialog__close_icon', 'close')
+      .dialog__content
+        p= text

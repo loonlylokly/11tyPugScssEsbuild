@@ -1,0 +1,40 @@
+{
+  "name": "11ty-pug-scss-esbuild",
+  "version": "1.0.0",
+  "description": "Quick start for landings on Eleventy(v3.x) with stack: Pug, SCSS, ESBuild and convenient assembly.",
+  "type": "module",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "deploy": "npx @11ty/eleventy && ./deploy.sh",
+    "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve --quiet",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+    "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+    "benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/loonlylokly/11tyPugScssEsbuild.git"
+  },
+  "author": {
+    "name": "loonlylokly",
+    "url": "https://github.com/loonlylokly"
+  },
+  "bugs": {
+    "url": "https://github.com/loonlylokly/11tyPugScssEsbuild/issues"
+  },
+  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.25.2",
+    "pug": "^3.0.3",
+    "sass": "^1.86.3"
+  }
+}

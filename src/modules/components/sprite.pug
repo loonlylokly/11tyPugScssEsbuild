@@ -1,0 +1,9 @@
+mixin sprite(classname, id)
+  span.icon-wrap(class=classname)
+    svg
+      use(xlink:href='assets/images/icons/sprites.svg#' + id)
+
+mixin icon(classname, src)
+  span.icon-wrap(class=classname)
+    svg
+      use(xlink:href=src)

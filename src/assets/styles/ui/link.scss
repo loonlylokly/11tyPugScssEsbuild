@@ -1,0 +1,15 @@
+.link {
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  text-decoration: none;
+  color: var(--clr-primary);
+  border-bottom: 1px solid transparent;
+  transition: 300ms;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--clr-primary);
+  }
+}

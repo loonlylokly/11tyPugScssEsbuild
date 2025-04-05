@@ -1,0 +1,7 @@
+mixin img(classname, src, alt)
+  div(class=classname data-aos=aos)
+    img(loading="eager" decoding="sync" src=src alt=alt)
+
+mixin img-lazy(classname, src, alt)
+  div(class=classname data-aos=aos)
+    img(loading="lazy" decoding="async" src=src alt=alt)

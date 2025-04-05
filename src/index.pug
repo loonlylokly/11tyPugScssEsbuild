@@ -1,0 +1,16 @@
+extends ./modules/layouts/base
+
+block meta
+  - var seotitle = 'Главная';
+  - var seodescription = '';
+  - var seokeywords = '';
+
+block header
+  include ./modules/widgets/header/header
+  include ./modules/widgets/header-mobile/header-mobile
+
+block main
+  include ./modules/widgets/home/promo/promo
+
+block footer
+  include ./modules/widgets/footer/footer

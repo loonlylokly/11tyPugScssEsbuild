@@ -1,0 +1,4 @@
+dist
+_dist
+node_modules
+src/assets/styles/vendor/*

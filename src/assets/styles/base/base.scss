@@ -1,0 +1,242 @@
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+body {
+  color: var(--onBack);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font: var(--txt-xl);
+  background-color: var(--Back);
+
+  @include breakpoint($sm-bp) {
+    font: var(--txt-xl-m);
+  }
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+h1 {
+  font: var(--txt-h1);
+
+  @include breakpoint($sm-bp) {
+    font: var(--txt-h1-m);
+  }
+}
+
+h2 {
+  font: var(--txt-h2);
+
+  @include breakpoint($sm-bp) {
+    font: var(--txt-h2-m);
+  }
+}
+
+h3 {
+  font: var(--txt-h3);
+
+  @include breakpoint($sm-bp) {
+    font: var(--txt-h3-m);
+  }
+}
+
+h4 {
+  font: var(--txt-h4);
+
+  @include breakpoint($sm-bp) {
+    font: var(--txt-h4-m);
+  }
+}
+
+p {
+  font: var(--txt-xl);
+
+  @include breakpoint($sm-bp) {
+    font: var(--txt-xl-m);
+  }
+}
+
+main {
+  padding-top: var(--main-pd-top);
+}
+
+hr {
+  background-color: var(--Border, #a7a7a7);
+  width: 100%;
+  height: 1px;
+  border: none;
+
+  &.vertical {
+    width: 1px;
+    height: 100%;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: var(--wrapper-pd-inl);
+}
+
+.wrapper-lg {
+  max-width: 1920px;
+  margin: var(--section-mg) auto 0;
+  padding-inline: 140px;
+
+  @include breakpoint($xl-bp) {
+    margin-inline: 0;
+    padding-inline: 270px;
+  }
+
+  @include breakpoint(1919px) {
+    padding-inline: var(--wrapper-pd-inl);
+  }
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 10px 15px;
+  color: var(--clr-back);
+  background: var(--clr-primary);
+  transform: translateY(-100%);
+  z-index: 102;
+}
+
+.skip-link:focus {
+  transform: translateY(20%);
+}
+
+.icon-wrap {
+  display: inline-block;
+}
+
+.accent-letter {
+  color: #ff7a00;
+}
+
+.warning {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  font: var(--text-p-3);
+  color: var(--clr-back);
+  border-radius: 16px;
+  background: var(--decor-decor-273-c-7-b, #273c7b);
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  &__icon {
+    min-width: 64px;
+    max-width: 64px;
+    height: 70px;
+    fill: transparent;
+    stroke: var(--clr-back);
+
+    & path {
+      fill: var(--clr-back);
+    }
+  }
+}
+
+.info-warning {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  font: var(--text-p-3);
+  color: var(--clr-text);
+  border-radius: 16px;
+  background: hsla(var(--clr-sky-light) / 0.2);
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  &__icon {
+    min-width: 64px;
+    max-width: 64px;
+    height: 70px;
+    fill: transparent;
+    stroke: var(--clr-secondary);
+
+    & path {
+      fill: var(--clr-back);
+    }
+  }
+}
+
+br.desk {
+  @media (max-width: 1280px) {
+    display: none;
+  }
+}
+
+br.desk-tab {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+br.tab {
+  display: none;
+  @media (max-width: 1280px) {
+    display: initial;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+br.tab-mob {
+  display: none;
+  @media (max-width: 1280px) {
+    display: initial;
+  }
+}
+
+br.mob {
+  display: none;
+  @media (max-width: 768px) {
+    display: initial;
+  }
+}
